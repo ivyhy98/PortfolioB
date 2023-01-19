@@ -1,0 +1,372 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: black;
+}
+.content>div {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+/* ==== Nav Bar ==== */
+nav{
+    position: fixed;
+    top: 0px;
+    right: 10%;
+    height: 50px;
+    width: 80%;
+    padding: 0px 10px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.right-nav-mobile{
+    display: none;
+}
+.right-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+.right-nav> a{
+    text-decoration: none;
+    color: white;
+}
+.right-nav>a:hover {
+    border-bottom:1px solid white;
+}
+
+#resume{
+    height: 40px;
+    background-color: black;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+}
+.left-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.left-nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* DropDown Menu */
+.dropdown-img{
+    width: 40px;
+    height: 40px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-item{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-item:hover{
+    background-color: white;
+    color: black;
+}
+.show{
+    display: block;
+}
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    color: white;
+}
+
+.icons > img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/* === Home === */
+.group{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.group > section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.info > h1{
+    font-size: 4rem;
+    margin: 0;
+}
+.info > h3{
+    font-size: 2rem;
+    margin: 0;
+}
+.picture{
+    color: blue;
+}
+.picture img{
+    height: 70%;
+    width: 70%;
+    padding: 20px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.contact-btn{
+    color: white;
+}
+
+/* === About Page === */
+#about{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.information>article{
+    width: 33%;
+    height: 80%;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+}
+/* about me summary */
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-left: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.summary>p{
+    font-size: 18px;
+    margin-top: 5px;
+    
+}
+.summary>h3 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* skills */
+.skills{
+    border: 1px solid white;
+    border-left: none;
+}
+.skills>h3{
+    margin: 0;
+    margin-top: 5px;
+}
+.skills-div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+}
+.skills-div>section{
+    width: 70%;
+    height: 30%;
+}
+.fend>img{
+    border: 1px solid black;
+}
+.fend{
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bend{
+    align-self: center;
+}
+.dools{
+    align-self: flex-start;
+    text-align: left;
+}
+/* education */
+.education{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+.education>h3 {
+    margin: 0;
+    margin-top: 5px;
+}
+.education> img{
+    height: 25%;
+    width: 50%;
+    border: 2px solid black;
+    margin: 10px;
+}
+.eleft {
+    align-self: flex-end;
+}
+
+
+
+
+/* ==== Work ==== */
+
+#work{
+    text-align: center;
+    width: 100%;
+}
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.work-div{
+    height: 35%;
+    width: 30%;
+    display: flex;
+    border: 2px solid white;
+}
+
+.work-div> img{
+    width: 50%;
+    height: 100%;
+}
+
+.links>span{
+    height: 15%;
+    width: 40%;
+    padding: 5px 20px;
+    background-color: black;
+    border: 1px solid white;
+}
+.links>span>a{
+    text-decoration: none;
+    color: white;
+    height: 15%;
+    width: 40%;
+}
+
+/* ==== Contact ==== */
+#contact {
+    text-align: center;
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+form>label{
+    margin: 2% 0%;
+    font-size: 18px;
+}
+form>input{
+    width: 40%;
+    height: 20px;
+    margin: 0% 2%;
+}
+form> textarea{
+    width: 40%;
+    margin: 0% 2%;
+    
+}
+form>button{
+    height: 5%;
+    width: 15%;
+    background-color: black;
+    border: 1px solid white;
+    align-self: center;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Mobile Styles */
+
+@media(max-width: 950px){
+    .right-nav-mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+    }
+    .right-nav{
+        display: none;
+    }
+    #about{
+        height: 300%;
+    }
+    .picture{
+        display: none !important;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    .information>article{
+        width: 100%;
+        height: 33%;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+    }
+    .summary>img{
+        display: none;
+    }
+    aside{
+        position: fixed;
+        bottom: 20px;
+    }
+}
