@@ -13,6 +13,10 @@ body{
     color: white;
 }
 
+.page-header{
+    border-bottom: 1px solid white;
+    width: 80%;
+}
 .hide{
     display: none;
 }
@@ -381,6 +385,15 @@ form>button{
     }
     .summary>img{
         display: none;
+    }
+    .work-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #work{
+        height: 300%;
     }
     aside{
         position: fixed;
