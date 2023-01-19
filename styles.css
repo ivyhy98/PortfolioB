@@ -47,6 +47,10 @@ nav{
 .right-nav>a:hover {
     border-bottom:1px solid white;
 }
+.right-nav button> a{
+    text-decoration: none;
+    color: white;
+}
 
 #resume{
     height: 40px;
@@ -110,6 +114,7 @@ nav{
 .icons > img{
     height: 50px;
     width: 50px;
+    background-color: black;
 }
 
 
@@ -192,6 +197,10 @@ nav{
     margin-top: 5px;
 }
 
+.summary>img{
+    width: 50%;
+    height: 40%;
+}
 /* skills */
 .skills{
     border: 1px solid white;
@@ -295,6 +304,7 @@ nav{
 }
 
 /* ==== Contact ==== */
+
 #contact {
     text-align: center;
     width: 100%;
@@ -302,7 +312,7 @@ nav{
 form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     height: 100%;
     justify-content: center;
     align-items: center;
