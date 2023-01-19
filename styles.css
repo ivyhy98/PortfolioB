@@ -115,6 +115,7 @@ nav{
     height: 50px;
     width: 50px;
     background-color: black;
+    margin-left: 10px;
 }
 
 
@@ -172,7 +173,7 @@ nav{
 }
 .information>article{
     width: 33%;
-    height: 80%;
+    height: 85%;
     flex-wrap: wrap;
     background-color: black;
     color: white;
@@ -217,6 +218,9 @@ nav{
     padding: 10px;
     margin: 0;
 }
+.skills-div > h3{
+    margin:0;
+}
 .skills-div>section{
     width: 70%;
     height: 30%;
@@ -231,6 +235,9 @@ nav{
 
 .bend{
     align-self: center;
+}
+.bend > h5{
+    margin: 0;
 }
 .dools{
     align-self: flex-start;
