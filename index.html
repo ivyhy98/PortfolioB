@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/09c4b5e7a9.js" crossorigin="anonymous"></script>
     <script defer src="script.js" ></script>
     <title>IH Portfolio</title>
 </head>
@@ -31,8 +32,8 @@
         </div>
     </nav>
     <aside class="sidebar">
-        <a class="icons" href="http://github.com/ivyhy98"><img src="images/github.png" alt="github"></a>
-        <a class="icons" href="http://linkedin.com/ivana-hylton"><img src="images/linkedin.png" alt="linked-in"></a>
+        <a class="icons" target="_blank" href="http://github.com/ivyhy98"><img src="images/github.png" alt="github"></a>
+        <a class="icons" target="_blank" href="https://www.linkedin.com/in/ivana-hylton/"><img src="images/linkedin.png" alt="linked-in"></a>
     </aside>
     <main class="content">
 
@@ -51,51 +52,75 @@
 
         <div id="about">
             <h2 class="page-header">About Me</h2>
-            <div class="information">
-                <article class="summary">
-                    <h3>Some Stuff About Me</h3>
-                    <p>Hey there! My name is Ivana Hylton from Cincinnati, Ohio and I love creating and designing solutions that reside on the web.
-                        <br>
-                        I began my love for computers at a coding camp in the 7th grade where I learned HTML, CSS and also Raspberry Pi Coding.
-                        <br>
-                        Today my love for programming and designing is full on and I am continuously learning more programming languages everyday in my free time.
-                        <br>
-                        I am currently pursuing an oppurtunity to begin my career in the software developement industry and open to relocation.
-                    </p>
-                    <img src="images/me.jpg" alt="">
-                </article>
-                <article class="skills">
-                    <h3>Skills</h3>
-                    <div class="skills-div">
-                        <section class="fend">
-                            <h3>Front-End</h3>
-                            <p>React</p>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                        </section>
-                        <section class="bend">
-                            <h3>Back-End</h3>
-                            <p>Node.js</p>
-                            <p>Python</p>
-                            <hr>
-                            <h5>Currently Learning</h5>
-                            <p>Java</p>
-                        </section>
-                        <section class="dools">
-                            <h3>Dev Tools</h3>
-                            <p>Git</p>
-                            <p>Figma</p>
-                            <p>Material UI</p>
-                            <p>TailwindCSS</p>
-                        </section>
-                    </div>
-                </article>
-                <article class="education">
-                    <h3>Education</h3>
-                    <img class="eleft" src="images/perscholas.png" alt="">
-                    <img class="eright" src="images/freecodecamp.png" alt="">
-                    <img class="eleft" src="images/udemy.png" alt="">
-                </article>
+            
+            <i class="fa-solid fa-chevrons-right"></i>
+
+            <div class="information">  
+                <button onclick="handlePrev()">
+                    <img class="icon" src="images/left-icon.png" alt="left chevron icon">
+                </button> 
+
+                <div class="card-wrapper">          
+                    <article class="summary slide current" id="#slide-1">
+                        <h3>About Me</h3>
+                        <img src="images/me.jpg" alt="">
+                        <p class="">Hey there! My name is Ivana Hylton from Cincinnati, Ohio and I love creating and designing solutions that reside
+                            on the web.
+                            <br>
+                            I began my love for computers at a coding camp in the 7th grade where I learned HTML, CSS and also Raspberry Pi
+                            Coding.
+                            <br>
+                            Today my love for programming and designing is full on and I am continuously learning more programming languages
+                            everyday in my free time.
+                            <br>
+                            I am currently pursuing an oppurtunity to begin my career in the software developement industry and open to
+                            relocation.
+                        </p>
+                    </article>
+                    <article class="skills slide previous" id='#slide-2'>
+                        <h3>Skills</h3>
+                        <div class="skills-div">
+                            <section class="fend">
+                                <h3>Front-End</h3>
+                                <div class="skill-list">
+                                    <h5><i class="fa-brands fa-react"></i></h5>
+                                    <h5>Redux</h5>
+                                    <h5> <i class="fa-brands fa-html5"></i> </h5>
+                                    <h5><i class="fa-brands fa-css3"></i> </h5>
+                                </div>
+                            </section>
+                            <section class="bend">
+                                <h3>Back-End</h3>
+                                <div class="skill-list">
+                                <h5><i class="fa-brands fa-node"></i></h5>
+                                <h5><i class="fa-brands fa-python"></i></h5>
+                                </div> 
+                            </section>
+                            <section class="dools">
+                                <h3>Dev Tools</h3>
+                                <div class="skill-list">
+                                    <h5><i class="fa-brands fa-git"></i></h5>
+                                    <h5><i class="fa-brands fa-figma"></i></h5>
+                                    <h5>Material UI</h5>
+                                    <h5>TailwindCSS</h5>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>Currently Learning</h3>
+                                <p> <i class="fa-brands fa-java"></i></p>
+                            </section>
+                        </div>
+                    </article>
+                    <article class="education slide next" id='#slide-3'>
+                        <h3>Education</h3>
+                        <div class="image-container hide"></div>
+                        <img class="eleft" src="images/perscholas.png" alt="">
+                        <img class="eright" src="images/freecodecamp.png" alt="">
+                        <img class="eleft" src="images/udemy.png" alt="">
+                    </article>
+                </div>
+
+                <button onclick="handleNext()"><img class="icon" src="images/right-icon.png" alt="left chevron icon"></button>
             </div>
         </div>
 

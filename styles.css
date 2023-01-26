@@ -1,7 +1,6 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     background-color: black;
 }
 .content>div {
@@ -11,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
+    overflow: hidden;
 }
 
 .page-header{
@@ -18,8 +18,17 @@ body{
     width: 80%;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
+i{
+    color: white;
+    
+}
+.icon{
+    height: 100%;
+    width:100%;
+}
+
 /* ==== Nav Bar ==== */
 nav{
     position: fixed;
@@ -165,32 +174,67 @@ nav{
 /* === About Page === */
 #about{
     text-align: center;
-    padding-top: 50px;
 }
 
 .information{
     display: flex;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    
+    align-items: center;
+    justify-content: space-around;
 }
-.information>article{
-    width: 33%;
-    height: 85%;
-    flex-wrap: wrap;
+.card-wrapper{
+    display: flex;
+    height: 100%;
+    width: 85%;
+    justify-content: space-between;
+}
+button{
+    background-color: black;
+
+}
+.card-wrapper>article{
+    border: 1px solid white;
     background-color: black;
     color: white;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+.current{
+    height: 80%;
+    width: 100%;
+    order: 2;
+}
+.previous{
+    opacity: 25%;
+    width: 80%;
+    height: 70%;
+    justify-self: flex-start;
+    order: 1;
+    margin-top: 20px;
+}
+
+.next{
+    opacity: 25%;
+    width: 80%;
+    height: 70%;
+    margin-top: 20px;
+    justify-self: flex-end;
+    order: 3;
+}
+
+/* carousel */
+
+
+    
+
 /* about me summary */
 .summary{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
-    border-left: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
 }
 .summary>p{
     font-size: 18px;
@@ -214,46 +258,34 @@ nav{
 .skills>h3{
     margin: 0;
     margin-top: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .skills-div{
     display: flex;
-    flex-direction: column;
     height: 100%;
+    width: 100%;
     padding: 10px;
     margin: 0;
+    flex-direction: column;
 }
 .skills-div > h3{
     margin:0;
 }
 .skills-div>section{
-    width: 70%;
+    width: 100%;
     height: 30%;
 }
-.fend>img{
-    border: 1px solid black;
-}
-.fend{
-    align-self: flex-end;
-    text-align: right;
-}
-
-.bend{
-    align-self: center;
-}
-.bend > h5{
+.fend > h5{
     margin: 0;
-}
-.dools{
-    align-self: flex-start;
-    text-align: left;
 }
 /* education */
 .education{
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    display: flex;
     flex-direction: column;
 }
 .education>h3 {
@@ -400,3 +432,5 @@ form>button{
         bottom: 20px;
     }
 }
+
+/* try */
