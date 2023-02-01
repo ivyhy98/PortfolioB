@@ -24,7 +24,6 @@ function handlePrev(){
   current.classList.remove('current');
   prev.classList.remove('previous');
   next.classList.remove('next');
-  console.log('previous');
 }
 
 function handleNext(){
@@ -37,9 +36,44 @@ function handleNext(){
   current.classList.remove("current");
   prev.classList.remove("previous");
   next.classList.remove("next");
-  console.log("next");
 
 }
+
+//==== Work Div Click funtion ====
+const workDiv = document.querySelectorAll('.work-div');
+const close = document.querySelectorAll('#close-modal');
+
+function hideModal(i){
+   const modal = document.getElementById(`project-${i}`);
+   modal.classList.add("hide");
+   console.log(close[i]);
+}
+function showModal(i){
+  const modal = document.getElementById(`project-${i}`);
+  modal.classList.remove("hide");
+}
+
+for(let i = 0; i < workDiv.length; i++){
+  //Open modal when img is clicked
+  workDiv[i].addEventListener("click", (evt) => {
+    const modal = document.getElementById(`project-${i}`);
+    modal.classList.remove("hide");
+  });
+  //Close modal when x is clicked or
+  close[i].addEventListener("click", (evt) => {
+    const modal = document.getElementById(`project-${i}`);
+    modal.classList.add("hide");
+    console.log(close[i]);
+  });
+
+  // close if user clicks outside of modal
+
+  window.addEventListener("click", function (evt) {
+    
+  });
+}
+
+
 
 
 

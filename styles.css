@@ -3,14 +3,18 @@ body{
     box-sizing: border-box;
     background-color: black;
 }
+.content{
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    background-color: black;
+}
 .content>div {
     width: 100vw;
     height: 100vh;
-    background-color: black;
     margin: 0;
     padding: 0;
-    color: white;
-    overflow: hidden;
+   
 }
 
 .page-header{
@@ -318,17 +322,32 @@ button{
     height: 100%;
     width: 100%;
     justify-content: space-around;
+    align-items:center;
 }
 
 .work-div{
-    height: 35%;
-    width: 30%;
-    display: flex;
+    height: 40%;
+    width: 25%;
     border: 2px solid white;
+}
+.work-div > figcaption{
+    display: none;
+}
+
+.work-div:hover{
+    width: 30%;
+    height: 50%;
+    background-size: 100% 100%;
+}
+
+.work-div:hover > figcaption{
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .work-div> img{
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
@@ -385,6 +404,26 @@ form>button{
     margin-top: 5px;
 }
 
+/* Modal */
+.modal{
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    top: 200%;
+    left: 10%;
+    display: flex;
+    overflow-x: hidden;
+}
+.modal > *{
+    z-index: 2;
+}
+
+.modal > i{
+    justify-self: flex-end;
+}
+
 /* Mobile Styles */
 
 @media(max-width: 950px){
@@ -411,6 +450,10 @@ form>button{
         width: 100%;
         height: 33%;
     }
+    .previous, .next{
+        display: none!important;
+    }
+
     .summary{
         display: flex;
         flex-direction: column;
@@ -422,8 +465,13 @@ form>button{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content:space-around;
     }
-
+    .work-div{
+        height: 70%;
+        width: 70%;
+        
+    }
     #work{
         height: 300%;
     }
