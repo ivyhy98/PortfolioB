@@ -18,8 +18,8 @@ function handlePrev(){
   const current = document.querySelector('.current');
   const prev = document.querySelector('.previous');
   const next = document.querySelector('.next');
+  prev.classList.add("current");
   current.classList.add('next');
-  prev.classList.add('current');
   next.classList.add('previous');
   current.classList.remove('current');
   prev.classList.remove('previous');
@@ -30,9 +30,9 @@ function handleNext(){
   const current = document.querySelector(".current");
   const prev = document.querySelector(".previous");
   const next = document.querySelector(".next");
+  next.classList.add("current");
   current.classList.add("previous");
   prev.classList.add("next");
-  next.classList.add("current");
   current.classList.remove("current");
   prev.classList.remove("previous");
   next.classList.remove("next");
@@ -66,11 +66,6 @@ for(let i = 0; i < workDiv.length; i++){
     console.log(close[i]);
   });
 
-  // close if user clicks outside of modal
-
-  window.addEventListener("click", function (evt) {
-    
-  });
 }
 
 

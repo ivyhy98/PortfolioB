@@ -424,6 +424,30 @@ form>button{
     justify-self: flex-end;
 }
 
+.modal-img{
+    height: 100%;
+    width: 60%;
+}
+.modal-img > img{
+    height: 60%;
+    width: 70%;
+    margin: 20px;
+}
+.modal-details{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    justify-self: flex-end
+}
+.link > a{
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+}
 /* Mobile Styles */
 
 @media(max-width: 950px){
@@ -472,6 +496,10 @@ form>button{
         width: 70%;
         
     }
+    .work-div:hover {
+        width: 50%;
+        height: 50%;
+        }
     #work{
         height: 300%;
     }
